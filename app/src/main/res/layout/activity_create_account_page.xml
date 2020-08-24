@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/logo2"
+    tools:context=".CreateAccountPage">
+        <EditText
+        android:id="@+id/ed1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your email address"
+        android:textColorHint="#DF2424"
+        android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/ed2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:textColorHint="#DF0E0E"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:id="@+id/b12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#152E87"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Create account"/>
+        <Button
+            android:id="@+id/b13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1E3087"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:text="Give some important information"/>
+
+        <TextView
+            android:id="@+id/t12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Are you registered? Sign In?"
+            android:textColor="#E80C0C"
+            android:textSize="15sp"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold" />
+    <ProgressBar
+        android:id="@+id/p12"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>

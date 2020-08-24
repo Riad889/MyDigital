@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/logo4"
+    tools:context=".Information">
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/ed1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:textColorHint="#CC0707"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/ed4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your age"
+            android:textColorHint="#EA0909"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/ed5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your address"
+            android:textColorHint="#E30505"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/ed6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your blood group"
+            android:textColorHint="#D60808"
+            android:layout_marginBottom="10dp"/>
+
+        <EditText
+            android:id="@+id/ed7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of last donated blood"
+            android:textColorHint="#DD0808"
+            android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/ed8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phone number "
+            android:textColorHint="#DC080F"
+            android:layout_marginBottom="20dp"/>
+        <CheckBox
+            android:id="@+id/cb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_and_condition"
+            android:textStyle="bold"
+            android:textColor="#DA0808"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+        <Button
+            android:id="@+id/b12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#328585"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:text="Save my info and create account"/>
+    </LinearLayout>

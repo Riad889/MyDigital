@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/address"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is the adress"
+            android:textColor="#151415"
+            android:textSize="20sp"
+           android:textStyle="bold"
+            android:textIsSelectable="true">
+
+
+        </TextView>
+        <TextView
+            android:id="@+id/age"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is the age"
+            android:textColor="#151415"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true">
+
+
+        </TextView>
+        <TextView
+            android:id="@+id/bloodgroup"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is the bloodgroup"
+            android:textColor="#151415"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true">
+        </TextView>
+        <TextView
+            android:id="@+id/dod"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is the dateofdonation"
+            android:textColor="#151415"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true"
+            tools:ignore="InvalidId">
+        </TextView>
+        <TextView
+            android:id="@+id/mail"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is the email address"
+            android:textColor="#151415"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true">
+        </TextView>
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is the username"
+            android:textColor="#151415"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true">
+        </TextView>
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is the phonenumber"
+            android:textColor="#151415"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textIsSelectable="true">
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp">
+
+        </View>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

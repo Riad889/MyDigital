@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:hapticFeedbackEnabled="true"
+    android:orientation="vertical"
+    android:background="@drawable/logo2"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/b1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textStyle="bold"
+        android:textColor="#0C456C"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/b2"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREATE ACCOUNT"
+        android:textStyle="bold"
+        android:textColor="#111F9E"
+        android:layout_marginBottom="20dp"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/b3"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH BLOOD GROUP"
+        android:textStyle="bold"
+        android:textColor="#1141BA"
+        android:textSize="30sp"/>
+
+</LinearLayout>
