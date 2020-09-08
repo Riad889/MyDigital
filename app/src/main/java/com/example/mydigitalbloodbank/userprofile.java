@@ -1,12 +1,12 @@
 package com.example.mydigitalbloodbank;
 
-public class InfoGather {
-    private String name,address,age,bloodgroup,dod,phone,email,password;
+public class userprofile {
+    private  String address,age,bloodgroup,dod,name,phone,password,email;
 
-    public InfoGather() {
+    public userprofile() {
     }
 
-    public InfoGather(String name, String age, String address, String bloodgroup, String dod, String phone, String email, String password) {
+    public userprofile(String name, String age, String address, String bloodgroup, String dod, String phone) {
         this.name = name;
 
         this.address = address;
@@ -17,31 +17,6 @@ public class InfoGather {
         this.email=email;
         this.password=password;
     }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
 
     public String getAddress() {
         return address;
@@ -75,11 +50,19 @@ public class InfoGather {
         this.dod = dod;
     }
 
+    public String getname() {
+        return name;
+    }
+
+    public void setUsername(String name) {
+        this.name = name;
+    }
+
     public String getPhone() {
         return phone;
     }
 
-    public void setPhone(String phone) {
+    public void setPhonenumber(String phone) {
         this.phone = phone;
     }
 }

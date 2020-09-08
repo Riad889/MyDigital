@@ -14,11 +14,13 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthUserCollisionException;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -29,13 +31,16 @@ public class CreateAccountPage extends AppCompatActivity implements View.OnClick
     private TextView t11;
     private ProgressBar pb1;
     private FirebaseAuth mAuth;
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    String user_ID;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account_page);
         mAuth = FirebaseAuth.getInstance();
         editText1=findViewById(R.id.ed1);
-        editText2=findViewById(R.id.ed2);
+        //editText2=findViewById(R.id.ed2);
         b11=findViewById(R.id.b12);
         b112=findViewById(R.id.b13);
         t11=findViewById(R.id.t12);
@@ -57,10 +62,12 @@ public class CreateAccountPage extends AppCompatActivity implements View.OnClick
             case R.id.t12:
                 Intent intent = new Intent(getApplicationContext(),Login.class);
                 startActivity(intent);
+                //Animatoo.animateCard(this);
                 break;
             case R.id.b13:
                 Intent in=new Intent(getApplicationContext(),Information.class);
                 startActivity(in);
+                //Animatoo.animateCard(this);
                 break;
         }
     }
@@ -92,8 +99,11 @@ public class CreateAccountPage extends AppCompatActivity implements View.OnClick
         mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                pb1.setVisibility(View.GONE);
+                //pb1.setVisibility(View.GONE);
                 if (task.isSuccessful()) {
+                    //firebaseAuth = FirebaseAuth.getInstance();
+                    //firebaseUser = firebaseAuth.getCurrentUser();
+                    //user_ID = firebaseUser.getUid();
                     Toast.makeText(getApplicationContext(),"Reg is complete",Toast.LENGTH_SHORT).show();
 
                 } else {
@@ -110,6 +120,10 @@ public class CreateAccountPage extends AppCompatActivity implements View.OnClick
 
             }
         });
+        Intent in=new Intent(getApplicationContext(),Information.class);
+        startActivity(in);
+        //Animatoo.animateCard(this);
     }
+
 }
 

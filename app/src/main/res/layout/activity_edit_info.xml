@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/editinfosecond"
+    tools:context=".Edit_info">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+       <TextView
+           android:layout_marginTop="190dp"
+           android:id="@+id/ttt1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Edit Information"
+           android:textStyle="bold"
+           android:textColor="#BCD8CC59"
+           android:layout_marginLeft="70dp"
+           android:textSize="40sp"
+           android:layout_marginBottom="40dp"
+           android:fontFamily="sans-serif-condensed"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text"
+                android:layout_marginBottom="20dp"
+                android:hint="Enter the name :"
+                tools:ignore="InvalidId">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/input_text"
+                android:inputType="number"
+                android:hint="Enter the age :"
+                tools:ignore="InvalidId">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/input_text"
+                android:hint="Enter the address :"
+                tools:ignore="InvalidId">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edt4"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/input_text"
+                android:hint="Enter the bloodgroup :"
+                tools:ignore="InvalidId">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edt5"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/input_text"
+                android:inputType="date"
+                android:hint="Enter the date of donation :"
+                tools:ignore="InvalidId">
+
+            </EditText>
+            <EditText
+                android:id="@+id/edt6"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="20dp"
+                android:inputType="phone"
+                android:background="@drawable/input_text"
+                android:hint="Enter the phone number:"
+                tools:ignore="InvalidId">
+
+            </EditText>
+            <Button
+                android:id="@+id/bb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:textColor="#1745DC"
+                android:layout_marginBottom="20dp">
+
+            </Button>
+            <Button
+                android:id="@+id/bb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change password"
+                android:textSize="20dp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold"
+                android:background="@drawable/button"
+                android:textColor="#0437DD">
+
+            </Button>
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

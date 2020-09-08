@@ -9,35 +9,38 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+
 import java.util.ArrayList;
 
-public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
-    ArrayList<peopleInformation>list;
+public class Adapter extends FirebaseRecyclerAdapter<peopleInformation,Adapter.MyViewHolder> {
 
-    public Adapter(ArrayList<peopleInformation> list) {
-        this.list = list;
+    /**
+     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
+     * {@link FirebaseRecyclerOptions} for configuration options.
+     *
+     * @param options
+     */
+    public Adapter(@NonNull FirebaseRecyclerOptions<peopleInformation> options) {
+        super(options);
+    }
+
+    @Override
+    protected void onBindViewHolder(@NonNull MyViewHolder holder, int position, @NonNull peopleInformation model) {
+        holder.adress1.setText(model.getAddress());
+        holder. age1.setText(model.getAge());
+        holder.  bloodgroup1.setText(model.getBloodgroup());
+        holder.dateofdonation1.setText(model.getDod());
+        holder.username1.setText(model.getName());
+        holder.phonenumber1.setText(model.getPhone());
     }
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.card_holder,parent,false);
-        return new MyViewHolder(view);
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-       holder. adress1.setText(list.get(position).getAddress());
-        holder. age1.setText(list.get(position).getAge());
-        holder. bloodgroup1.setText(list.get(position).getBloodgroup());
-        holder. dateofdonation1.setText(list.get(position).getDod());
-        holder. username1.setText(list.get(position).getName());
-        holder. phonenumber1.setText(list.get(position).getPhone());
-    }
-
-    @Override
-    public int getItemCount() {
-        return list.size();
+       View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.card_holder,parent,false);
+       return  new MyViewHolder(view);
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder{

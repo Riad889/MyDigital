@@ -11,7 +11,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".searchview"></activity>
+        <activity android:name=".forget_password"></activity>
+        <activity android:name=".Change_password" />
+        <activity android:name=".Edit_info" />
+        <activity android:name=".Edit_Information" />
+        <activity android:name=".searchview" />
         <activity android:name=".Login" />
         <activity android:name=".Information" />
         <activity android:name=".CreateAccountPage" />

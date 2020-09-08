@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.blogspot.atifsoftwares.animatoolib.Animatoo;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
@@ -31,16 +33,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         {
             Intent intent=new Intent(getApplicationContext(),Login.class);
             startActivity(intent);
+           // Animatoo.animateCard(this);
         }
         else if (v.getId()==R.id.b2)
         {
-            Intent intent=new Intent(MainActivity.this,CreateAccountPage.class);
+            Intent intent=new Intent(MainActivity.this,Information.class);
             startActivity(intent);
+            //Animatoo.animateCard(this);
         }
         else if (v.getId()==R.id.b3)
         {
             Intent intent=new Intent(getApplicationContext(),searchview.class);
             startActivity(intent);
+            //Animatoo.animateCard(this);
         }
 
     }

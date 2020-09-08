@@ -12,31 +12,36 @@
         android:id="@+id/ed1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+            android:background="@drawable/input_text"
         android:hint="Enter your email address"
-        android:textColorHint="#DF2424"
-        android:layout_marginBottom="10dp"/>
+        android:textColorHint="#D34444"
+        android:layout_marginBottom="20dp"/>
 
         <EditText
-            android:id="@+id/ed2"
+            android:id="@+id/edd2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/input_text"
             android:hint="Enter your password"
             android:textColorHint="#DF0E0E"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="20dp"/>
         <Button
             android:id="@+id/b12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#152E87"
+            android:textColor="#FAFAFB"
             android:textStyle="bold"
+            android:background="@drawable/button"
             android:textSize="15sp"
-            android:text="Create account"/>
+            android:text="Create account"
+            android:layout_marginBottom="15dp"/>
         <Button
             android:id="@+id/b13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#1E3087"
+            android:textColor="#F8F9FB"
             android:textStyle="bold"
+            android:background="@drawable/button"
             android:textSize="15sp"
             android:layout_marginBottom="20dp"
             android:text="Give some important information"/>

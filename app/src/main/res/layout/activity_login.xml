@@ -12,26 +12,45 @@
         android:id="@+id/ett1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your email"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:hint="  Enter your email"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/input_text"
         android:layout_marginBottom="10dp"
         android:textColorHint="@color/colorPrimary"/>
     <EditText
         android:id="@+id/ett2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your password"
+        android:background="@drawable/input_text"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:hint="  Enter your password"
         android:layout_marginBottom="20dp"
         android:textColorHint="@color/colorPrimary"/>
     <Button
         android:id="@+id/bb1"
         android:layout_width="match_parent"
+        android:background="@drawable/button"
         android:layout_height="wrap_content"
         android:text="Sign In"
-        android:textColor="#500AF4"
+        android:textColor="#FBFBFB"
         android:textSize="20dp"
         android:textStyle="bold"
         android:layout_marginBottom="20dp"
         android:textAllCaps="true"/>
+    <Button
+        android:id="@+id/bb2"
+        android:layout_width="match_parent"
+        android:background="@drawable/button"
+        android:layout_height="wrap_content"
+        android:text="Forget password"
+        android:textColor="#FBFBFB"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        tools:ignore="DuplicateIds" />
 
     <TextView
         android:id="@+id/t1"

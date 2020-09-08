@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:background="@drawable/logo"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="bottom|center"
     tools:context=".SplashScreen">
     <ProgressBar
-        android:progressBackgroundTint="#17BCA7"
+        android:progressBackgroundTint="#D30D0D"
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

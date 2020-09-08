@@ -6,13 +6,16 @@ public class peopleInformation {
     public peopleInformation() {
     }
 
-    public peopleInformation(String address, String age, String bloodgroup, String dod, String name, String phone) {
-        this.address = address;
-        this.age = age;
-        this.bloodgroup = bloodgroup;
-        this.dod = dod;
-        this.name = name;
-        this.phone = phone;
+    @Override
+    public String toString() {
+        return "peopleInformation{" +
+                "address='" + address + '\'' +
+                ", age='" + age + '\'' +
+                ", bloodgroup='" + bloodgroup + '\'' +
+                ", dod='" + dod + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                '}';
     }
 
     public void setAddress(String address) {

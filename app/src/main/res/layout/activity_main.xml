@@ -14,19 +14,21 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="LOGIN"
         android:textStyle="bold"
-        android:textColor="#0C456C"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="20dp"
         android:textSize="30sp"/>
     <Button
         android:id="@+id/b2"
         android:gravity="center"
         android:layout_width="match_parent"
+        android:background="@drawable/button"
         android:layout_height="wrap_content"
         android:text="CREATE ACCOUNT"
         android:textStyle="bold"
-        android:textColor="#111F9E"
+        android:textColor="#FAFAFA"
         android:layout_marginBottom="20dp"
         android:textSize="30sp"/>
     <Button
@@ -34,9 +36,10 @@
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/button"
         android:text="SEARCH BLOOD GROUP"
         android:textStyle="bold"
-        android:textColor="#1141BA"
+        android:textColor="#F6F7F8"
         android:textSize="30sp"/>
 
 </LinearLayout>
